@@ -61,6 +61,7 @@ void task2()
     }
      timer=180000;
     while(timer--); // pun un delay pt ca procesorul functioneaza foarte rapid si nu apuc sa mi ia starea
+    while((PIND &(1<<PIND2))==0); // astept sa las butonul, ca o apasare sa schimbe o singura data
   } 
   
 
